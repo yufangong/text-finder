@@ -1,0 +1,41 @@
+// TextSearchCompt.idl : IDL source for TextSearchCompt
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TextSearchCompt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(342E471D-2F85-4D0C-8E92-9D3D051D02D1),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface ITextSearch : IDispatch{
+	
+
+	[id(1)] HRESULT SetSearchPath([in] BSTR path);
+	[id(2)] HRESULT SetSearchKeywords([in] SAFEARRAY(BSTR) keywords);
+	[id(3)] HRESULT SetSearchOption([in] VARIANT_BOOL searchAll);
+	[id(4)] HRESULT GetResults([out] SAFEARRAY(BSTR)* files);
+};
+[
+	uuid(A7263B32-5159-4114-A623-67A334C19EC4),
+	version(1.0),
+]
+library TextSearchComptLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(EC0DD778-6155-4392-A29D-7FB3D73BB282)		
+	]
+	coclass TextSearch
+	{
+		[default] interface ITextSearch;
+	};
+};
+
+import "shobjidl.idl";

@@ -1,0 +1,6 @@
+C:\DOproject1\TextSearchCompt\csClient\bin\Debug\csClient.exe.config
+C:\DOproject1\TextSearchCompt\csClient\bin\Debug\csClient.exe
+C:\DOproject1\TextSearchCompt\csClient\bin\Debug\csClient.pdb
+C:\DOproject1\Debug\csClient.exe.config
+C:\DOproject1\Debug\csClient.exe
+C:\DOproject1\Debug\csClient.pdb

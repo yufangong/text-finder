@@ -1,0 +1,1 @@
+devenv TextSearchCompt.sln /rebuild debug
